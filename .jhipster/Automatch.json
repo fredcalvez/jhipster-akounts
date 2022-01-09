@@ -1,0 +1,36 @@
+{
+  "name": "Automatch",
+  "fields": [
+    {
+      "fieldName": "matchstring",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "updateTime",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "lastUsedTime",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "useCount",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "defaultTag",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [],
+  "entityTableName": "automatch",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": ["akounts"],
+  "changelogDate": "20220109205557"
+}
