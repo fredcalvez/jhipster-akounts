@@ -7,6 +7,19 @@
       "jhipster-needle-menu-add-element": "JHipster will add additional menu entries here (do not translate!)",
       "entities": {
         "main": "Entities",
+        "akountsSettings": "Akounts Settings",
+        "automatch": "Automatch",
+        "bankCategory": "Bank Category",
+        "bankAccount": "Bank Account",
+        "bankInstitution": "Bank Institution",
+        "bankAccountInterest": "Bank Account Interest",
+        "bankTransaction": "Bank Transaction",
+        "rebaseHistory": "Rebase History",
+        "bankSaving": "Bank Saving",
+        "bankProject": "Bank Project",
+        "bankProjectTransaction": "Bank Project Transaction",
+        "bankStream": "Bank Stream",
+        "bankStreamTransaction": "Bank Stream Transaction",
         "jhipster-needle-menu-add-entry": "JHipster will add additional entities here (do not translate!)"
       },
       "account": {
