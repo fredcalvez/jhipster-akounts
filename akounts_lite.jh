@@ -1,0 +1,179 @@
+
+application {
+  config {
+    applicationType monolith,
+    baseName akounts,
+    packageName com.akounts.myapp,
+    serverPort 8080,
+    serviceDiscoveryType false,
+    authenticationType jwt,
+    cacheProvider ehcache,
+    enableHibernateCache true,
+    databaseType sql,
+    devDatabaseType h2Disk,
+    prodDatabaseType mariadb,
+    buildTool gradle,
+    enableTranslation true,
+    nativeLanguage en,
+    clientFramework react,
+    clientTheme Slate
+  }
+  entities *
+}
+
+entity AkountsSettings {
+    settingKey String,
+    settingVal String,
+}
+
+entity Automatch {
+    matchstring  String, 
+    updateTime   Instant,
+    lastUsedTime Instant,
+    useCount     Integer, 
+    defaultTag   String
+}
+
+entity BankCategory {
+    parent    Integer, 
+    categorieLabel  String, 
+    categorieDesc   String, 
+    income       Boolean,
+    isexpense      Boolean
+}
+
+entity BankAccount {
+    accountLabel     String, 
+    accountNumber    String, 
+    active           Boolean,
+    currency          Currency, 
+    initialAmount     BigDecimal,
+    initialAmountLocal BigDecimal,
+    accountType         AccountType, 
+    interest            BigDecimal,
+    nickname      String
+}
+
+entity BankInstitution {
+    institutionLabel String, 
+    code		     String, 
+    active           Boolean,
+    currency         Currency, 
+    isoCountryCode   String
+}
+
+entity BankAccountInterest {
+    interest          	BigDecimal,
+    period 				String, 
+    interestType       	String,                                                                                       
+    units               BigDecimal,         
+    startDate          	LocalDate , 
+    endDate            	LocalDate ,
+    scrappingURL        String, 
+    scrappingTag        String, 
+    scrappingTagBis    	String
+    }
+
+entity BankTransaction {
+    transactionId 		String, 
+    transactionDate 	LocalDate ,
+    description      	String, 
+    localAmount     	BigDecimal,
+    localCurrency    	Currency,
+    amount            	BigDecimal,
+    currency          	Currency,
+    note              	String, 
+    year             	Integer,
+    month             	Integer,
+    week              	Integer,
+    categorizedDate 	Instant,
+    addDate         	Instant,
+    checked          	Boolean, 
+    rebasedDate     	Instant,
+    deleted          	Boolean,
+    tag              	String,
+    createdOn      		Instant,
+    updatedOn       	Instant,
+    version          	Integer
+}
+
+entity RebaseHistory {
+    oldValue       BigDecimal,
+    oldCurrency   Currency,
+    newValue       BigDecimal,
+    newCurrency   Currency,          
+    runDate       Instant
+}
+
+entity BankSaving{
+    summaryDate Instant,
+    amount       BigDecimal,
+    goal          BigDecimal,
+    reach         BigDecimal
+}
+
+entity BankProject{
+    name           String,
+    projectType    String,
+    initialValue   BigDecimal,
+    currentValue   BigDecimal
+}
+
+entity BankProjectTransaction{
+}
+
+entity BankStream{
+    name  		String,
+    streamType  String
+}
+
+entity BankStreamTransaction{
+}
+
+enum Currency {
+    AED("AED"), AFN("AFN"), ALL("ALL"), AMD("AMD"), ANG("ANG"), AOA("AOA"), ARS("ARS"), AUD("AUD"), AWG("AWG"), AZN("AZN"), BAM("BAM"), BBD("BBD"),
+    BDT("BDT"), BGN("BGN"), BHD("BHD"), BIF("BIF"), BMD("BMD"), BND("BND"), BOB("BOB"), BOV("BOV"), BRL("BRL"), BSD("BSD"), BTN("BTN"), BWP("BWP"),
+    BYN("BYN"), BYR("BYR"), BZD("BZD"), CAD("CAD"), CDF("CDF"), CHE("CHE"), CHF("CHF"), CHW("CHW"), CLF("CLF"), CLP("CLP"), CNY("CNY"), COP("COP"),
+    COU("COU"), CRC("CRC"), CUC("CUC"), CUP("CUP"), CVE("CVE"), CZK("CZK"), DJF("DJF"), DKK("DKK"), DOP("DOP"), DZD("DZD"), EGP("EGP"), ERN("ERN"),
+    ETB("ETB"), EUR("EUR"), FJD("FJD"), FKP("FKP"), GBP("GBP"), GEL("GEL"), GHS("GHS"), GIP("GIP"), GMD("GMD"), GNF("GNF"), GTQ("GTQ"), GYD("GYD"),
+    HKD("HKD"), HNL("HNL"), HRK("HRK"), HTG("HTG"), HUF("HUF"), IDR("IDR"), ILS("ILS"), INR("INR"), IQD("IQD"), IRR("IRR"), ISK("ISK"), JMD("JMD"),
+    JOD("JOD"), JPY("JPY"), KES("KES"), KGS("KGS"), KHR("KHR"), KMF("KMF"), KPW("KPW"), KRW("KRW"), KWD("KWD"), KYD("KYD"), KZT("KZT"), LAK("LAK"),
+    LBP("LBP"), LKR("LKR"), LRD("LRD"), LSL("LSL"), LYD("LYD"), MAD("MAD"), MDL("MDL"), MGA("MGA"), MKD("MKD"), MMK("MMK"), MNT("MNT"), MOP("MOP"),
+    MRO("MRO"), MUR("MUR"), MVR("MVR"), MWK("MWK"), MXN("MXN"), MXV("MXV"), MYR("MYR"), MZN("MZN"), NAD("NAD"), NGN("NGN"), NIO("NIO"), NOK("NOK"),
+    NPR("NPR"), NZD("NZD"), OMR("OMR"), PAB("PAB"), PEN("PEN"), PGK("PGK"), PHP("PHP"), PKR("PKR"), PLN("PLN"), PYG("PYG"), QAR("QAR"), RON("RON"),
+    RSD("RSD"), RUB("RUB"), RWF("RWF"), SAR("SAR"), SBD("SBD"), SCR("SCR"), SDG("SDG"), SEK("SEK"), SGD("SGD"), SHP("SHP"), SLL("SLL"), SOS("SOS"),
+    SRD("SRD"), SSP("SSP"), STD("STD"), SYP("SYP"), SZL("SZL"), THB("THB"), TJS("TJS"), TMT("TMT"), TND("TND"), TOP("TOP"), TRY("TRY"), TTD("TTD"),
+    TWD("TWD"), TZS("TZS"), UAH("UAH"), UGX("UGX"), USD("USD"), USN("USN"), UYI("UYI"), UYU("UYU"), UZS("UZS"), VEF("VEF"), VND("VND"), VUV("VUV"),
+    WST("WST"), XAF("XAF"), XAG("XAG"), XAU("XAU"), XBA("XBA"), XBB("XBB"), XBC("XBC"), XBD("XBD"), XCD("XCD"), XDR("XDR"), XFU("XFU"), XOF("XOF"),
+    XPD("XPD"), XPF("XPF"), XPT("XPT"), XSU("XSU"), XTS("XTS"), XUA("XUA"), XXX("XXX"), YER("YER"), ZAR("ZAR"), ZMW("ZMW")
+}
+
+enum AccountType {
+    Check, Loan, Interest, Property, Fund
+}
+
+relationship OneToOne {
+    BankAccountInterest{creditedAccountId} to BankAccount,
+    BankTransaction{catId} to BankCategory,
+    BankTransaction{accountId} to BankAccount,
+    RebaseHistory{transactionId} to BankTransaction,
+    BankProject{mainAccountId} to BankAccount,
+    BankStream{mainAccountId} to BankAccount,
+    BankProjectTransaction{transactionId} to BankTransaction,
+    BankProjectTransaction{projectId} to BankProject,
+    BankStreamTransaction{transactionId} to BankTransaction,
+    BankStreamTransaction{streamId} to BankStream
+}
+
+relationship OneToMany {
+	BankCategory to Automatch{category},
+}
+
+relationship ManyToOne {
+	BankAccount{institution} to BankInstitution
+}
+
+dto * with mapstruct
+service * with serviceClass
+paginate * with infinite-scroll
+    
