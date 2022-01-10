@@ -48,6 +48,19 @@ public class CacheConfiguration {
             createCache(cm, com.akounts.myapp.domain.User.class.getName());
             createCache(cm, com.akounts.myapp.domain.Authority.class.getName());
             createCache(cm, com.akounts.myapp.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.akounts.myapp.domain.AkountsSettings.class.getName());
+            createCache(cm, com.akounts.myapp.domain.Automatch.class.getName());
+            createCache(cm, com.akounts.myapp.domain.BankCategory.class.getName());
+            createCache(cm, com.akounts.myapp.domain.BankAccount.class.getName());
+            createCache(cm, com.akounts.myapp.domain.BankInstitution.class.getName());
+            createCache(cm, com.akounts.myapp.domain.BankAccountInterest.class.getName());
+            createCache(cm, com.akounts.myapp.domain.BankTransaction.class.getName());
+            createCache(cm, com.akounts.myapp.domain.RebaseHistory.class.getName());
+            createCache(cm, com.akounts.myapp.domain.BankSaving.class.getName());
+            createCache(cm, com.akounts.myapp.domain.BankProject.class.getName());
+            createCache(cm, com.akounts.myapp.domain.BankProjectTransaction.class.getName());
+            createCache(cm, com.akounts.myapp.domain.BankStream.class.getName());
+            createCache(cm, com.akounts.myapp.domain.BankStreamTransaction.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }

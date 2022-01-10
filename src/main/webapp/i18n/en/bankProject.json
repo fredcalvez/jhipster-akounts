@@ -1,0 +1,27 @@
+{
+  "akountsApp": {
+    "bankProject": {
+      "home": {
+        "title": "Bank Projects",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Bank Project",
+        "createOrEditLabel": "Create or edit a Bank Project",
+        "notFound": "No Bank Projects found"
+      },
+      "created": "A new Bank Project is created with identifier {{ param }}",
+      "updated": "A Bank Project is updated with identifier {{ param }}",
+      "deleted": "A Bank Project is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Bank Project {{ id }}?"
+      },
+      "detail": {
+        "title": "Bank Project"
+      },
+      "id": "ID",
+      "name": "Name",
+      "projectType": "Project Type",
+      "initialValue": "Initial Value",
+      "currentValue": "Current Value"
+    }
+  }
+}

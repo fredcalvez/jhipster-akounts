@@ -1,0 +1,54 @@
+{
+  "name": "BankAccount",
+  "fields": [
+    {
+      "fieldName": "accountLabel",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "accountNumber",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "active",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "currency",
+      "fieldType": "Currency",
+      "fieldValues": "EUR,USD,VND,SGD,AUD"
+    },
+    {
+      "fieldName": "initialAmount",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "initialAmountLocal",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "accountType",
+      "fieldType": "AccountType",
+      "fieldValues": "Check,Loan,Interest,Property,Fund"
+    },
+    {
+      "fieldName": "interest",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "nickname",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [],
+  "entityTableName": "bank_account",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": ["akounts"],
+  "changelogDate": "20220110130159"
+}
