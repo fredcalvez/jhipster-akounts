@@ -1,0 +1,30 @@
+{
+  "name": "BankStreamTransaction",
+  "fields": [],
+  "relationships": [
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "bankTransaction",
+      "otherEntityRelationshipName": "bankStreamTransaction",
+      "relationshipName": "transactionId",
+      "ownerSide": true
+    },
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "bankStream",
+      "otherEntityRelationshipName": "bankStreamTransaction",
+      "relationshipName": "streamId",
+      "ownerSide": true
+    }
+  ],
+  "entityTableName": "bank_stream_transaction",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": ["akounts"],
+  "changelogDate": "20220110131148"
+}

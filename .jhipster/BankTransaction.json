@@ -1,0 +1,113 @@
+{
+  "name": "BankTransaction",
+  "fields": [
+    {
+      "fieldName": "transactionId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "transactionDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "localAmount",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "localCurrency",
+      "fieldType": "Currency",
+      "fieldValues": "EUR,USD,VND,SGD,AUD"
+    },
+    {
+      "fieldName": "amount",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "currency",
+      "fieldType": "Currency",
+      "fieldValues": "EUR,USD,VND,SGD,AUD"
+    },
+    {
+      "fieldName": "note",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "year",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "month",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "week",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "categorizedDate",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "addDate",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "checked",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "rebasedDate",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "deleted",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "tag",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "createdOn",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "updatedOn",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "version",
+      "fieldType": "Integer"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "bankCategory",
+      "otherEntityRelationshipName": "bankTransaction",
+      "relationshipName": "catId",
+      "ownerSide": true
+    },
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "bankAccount",
+      "otherEntityRelationshipName": "bankTransaction",
+      "relationshipName": "accountId",
+      "ownerSide": true
+    }
+  ],
+  "entityTableName": "bank_transaction",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": ["akounts"],
+  "changelogDate": "20220110131142"
+}

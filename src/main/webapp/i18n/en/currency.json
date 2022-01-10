@@ -1,0 +1,12 @@
+{
+  "akountsApp": {
+    "Currency": {
+      "null": "",
+      "EUR": "EUR",
+      "USD": "USD",
+      "VND": "VND",
+      "SGD": "SGD",
+      "AUD": "AUD"
+    }
+  }
+}
