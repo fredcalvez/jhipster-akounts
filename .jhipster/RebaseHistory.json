@@ -1,0 +1,46 @@
+{
+  "name": "RebaseHistory",
+  "fields": [
+    {
+      "fieldName": "oldValue",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "oldCurrency",
+      "fieldType": "Currency",
+      "fieldValues": "EUR,USD,VND,SGD,AUD"
+    },
+    {
+      "fieldName": "newValue",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "newCurrency",
+      "fieldType": "Currency",
+      "fieldValues": "EUR,USD,VND,SGD,AUD"
+    },
+    {
+      "fieldName": "runDate",
+      "fieldType": "Instant"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "bankTransaction",
+      "otherEntityRelationshipName": "rebaseHistory",
+      "relationshipName": "transactionId",
+      "ownerSide": true
+    }
+  ],
+  "entityTableName": "rebase_history",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": ["akounts"],
+  "changelogDate": "20220110131143"
+}
