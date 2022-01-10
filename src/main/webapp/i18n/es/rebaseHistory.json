@@ -1,0 +1,29 @@
+{
+  "akountsApp": {
+    "rebaseHistory": {
+      "home": {
+        "title": "Rebase Histories",
+        "refreshListLabel": "Refrescar lista",
+        "createLabel": "Crear nuevo Rebase History",
+        "createOrEditLabel": "Crear o editar Rebase History",
+        "notFound": "Ningún Rebase Histories encontrado"
+      },
+      "created": "Un nuevo Rebase History ha sido creado con el identificador {{ param }}",
+      "updated": "Un Rebase History ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Rebase History ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Rebase History {{ id }}?"
+      },
+      "detail": {
+        "title": "Rebase History"
+      },
+      "id": "ID",
+      "oldValue": "Old Value",
+      "oldCurrency": "Old Currency",
+      "newValue": "New Value",
+      "newCurrency": "New Currency",
+      "runDate": "Run Date",
+      "transactionId": "Transaction Id"
+    }
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "akountsApp": {
+    "bankTransaction": {
+      "home": {
+        "title": "Bank Transactions",
+        "refreshListLabel": "Refrescar lista",
+        "createLabel": "Crear nuevo Bank Transaction",
+        "createOrEditLabel": "Crear o editar Bank Transaction",
+        "notFound": "Ningún Bank Transactions encontrado"
+      },
+      "created": "Un nuevo Bank Transaction ha sido creado con el identificador {{ param }}",
+      "updated": "Un Bank Transaction ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Bank Transaction ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Bank Transaction {{ id }}?"
+      },
+      "detail": {
+        "title": "Bank Transaction"
+      },
+      "id": "ID",
+      "transactionId": "Transaction Id",
+      "transactionDate": "Transaction Date",
+      "description": "Description",
+      "localAmount": "Local Amount",
+      "localCurrency": "Local Currency",
+      "amount": "Amount",
+      "currency": "Currency",
+      "note": "Note",
+      "year": "Year",
+      "month": "Month",
+      "week": "Week",
+      "categorizedDate": "Categorized Date",
+      "addDate": "Add Date",
+      "checked": "Checked",
+      "rebasedDate": "Rebased Date",
+      "deleted": "Deleted",
+      "tag": "Tag",
+      "createdOn": "Created On",
+      "updatedOn": "Updated On",
+      "version": "Version",
+      "catId": "Cat Id",
+      "accountId": "Account Id"
+    }
+  }
+}
