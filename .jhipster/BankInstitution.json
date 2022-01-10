@@ -1,0 +1,37 @@
+{
+  "name": "BankInstitution",
+  "fields": [
+    {
+      "fieldName": "institutionLabel",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "code",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "active",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "currency",
+      "fieldType": "Currency",
+      "fieldValues": "EUR,USD,VND,SGD,AUD"
+    },
+    {
+      "fieldName": "isoCountryCode",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [],
+  "entityTableName": "bank_institution",
+  "dto": "mapstruct",
+  "pagination": "no",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": ["akounts"],
+  "changelogDate": "20220110133030"
+}
