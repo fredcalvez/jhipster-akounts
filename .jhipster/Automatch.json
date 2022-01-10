@@ -1,0 +1,43 @@
+{
+  "name": "Automatch",
+  "fields": [
+    {
+      "fieldName": "matchstring",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "updateTime",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "lastUsedTime",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "useCount",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "defaultTag",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "bankCategory",
+      "otherEntityRelationshipName": "automatch",
+      "relationshipName": "category"
+    }
+  ],
+  "entityTableName": "automatch",
+  "dto": "mapstruct",
+  "pagination": "infinite-scroll",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": ["akounts"],
+  "changelogDate": "20220110204319"
+}
