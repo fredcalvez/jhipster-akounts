@@ -1,0 +1,177 @@
+
+application {
+  config {
+    applicationType monolith,
+    baseName akounts,
+    packageName com.akounts.myapp,
+    serverPort 8080,
+    serviceDiscoveryType false,
+    authenticationType jwt,
+    cacheProvider ehcache,
+    enableHibernateCache true,
+    databaseType sql,
+    devDatabaseType h2Disk,
+    prodDatabaseType mariadb,
+    buildTool gradle,
+    enableTranslation true,
+    nativeLanguage en,
+    clientFramework react,
+    clientTheme Slate,
+    languages [en, fr, de, es]
+  }
+  entities *
+}
+
+entity AkountsSettings {
+    settingKey String,
+    settingVal String,
+}
+
+entity Automatch {
+    matchstring  String, 
+    updateTime   Instant,
+    lastUsedTime Instant,
+    useCount     Integer, 
+    defaultTag   String
+}
+
+entity BankCategory {
+    parent    Integer, 
+    categorieLabel  String, 
+    categorieDesc   String, 
+    income       Boolean,
+    isexpense      Boolean
+}
+
+entity BankAccount {
+    accountLabel     String, 
+    accountNumber    String, 
+    active           Boolean,
+    currency          Currency, 
+    initialAmount     BigDecimal,
+    initialAmountLocal BigDecimal,
+    accountType         AccountType, 
+    interest            BigDecimal,
+    nickname      String
+}
+
+entity BankInstitution {
+    institutionLabel String, 
+    code		     String, 
+    active           Boolean,
+    currency         Currency, 
+    isoCountryCode   String
+}
+
+entity BankAccountInterest {
+    interest          	BigDecimal,
+    period 				String, 
+    interestType       	String,                                                                                       
+    units               BigDecimal,         
+    startDate          	LocalDate , 
+    endDate            	LocalDate ,
+    scrappingURL        String, 
+    scrappingTag        String, 
+    scrappingTagBis    	String
+    }
+
+entity BankTransaction {
+    transactionId 		String, 
+    transactionDate 	LocalDate ,
+    description      	String, 
+    localAmount     	BigDecimal,
+    localCurrency    	Currency,
+    amount            	BigDecimal,
+    currency          	Currency,
+    note              	String, 
+    year             	Integer,
+    month             	Integer,
+    week              	Integer,
+    categorizedDate 	Instant,
+    addDate         	Instant,
+    checked          	Boolean, 
+    rebasedDate     	Instant,
+    deleted          	Boolean,
+    tag              	String,
+    createdOn      		Instant,
+    updatedOn       	Instant,
+    version          	Integer
+}
+
+entity RebaseHistory {
+    oldValue       BigDecimal,
+    oldCurrency   Currency,
+    newValue       BigDecimal,
+    newCurrency   Currency,          
+    runDate       Instant
+}
+
+entity BankSaving{
+    summaryDate Instant,
+    amount       BigDecimal,
+    goal          BigDecimal,
+    reach         BigDecimal
+}
+
+entity BankProject{
+    name           String,
+    projectType    String,
+    initialValue   BigDecimal,
+    currentValue   BigDecimal
+}
+
+entity BankProjectTransaction{
+}
+
+entity BankStream{
+    name  		String,
+    streamType  String
+}
+
+entity BankStreamTransaction{
+}
+
+enum Currency {
+AED, AFN, ALL, AMD, ANG, AOA, ARS, AUD, AWG, AZN, BAM, BBD, BDT, BGN, BHD, BIF,
+    BMD, BND, BOB, BOV, BRL, BSD, BTN, BWP, BYN, BYR, BZD, CAD, CDF, CHE, CHF, CHW,
+    CLF, CLP, CNY, COP, COU, CRC, CUC, CUP, CVE, CZK, DJF, DKK, DOP, DZD, EGP, ERN,
+    ETB, EUR, FJD, FKP, GBP, GEL, GHS, GIP, GMD, GNF, GTQ, GYD, HKD, HNL, HRK, HTG,
+    HUF, IDR, ILS, INR, IQD, IRR, ISK, JMD, JOD, JPY, KES, KGS, KHR, KMF, KPW, KRW,
+    KWD, KYD, KZT, LAK, LBP, LKR, LRD, LSL, LYD, MAD, MDL, MGA, MKD, MMK, MNT, MOP,
+    MRO, MUR, MVR, MWK, MXN, MXV, MYR, MZN, NAD, NGN, NIO, NOK, NPR, NZD, OMR, PAB,
+    PEN, PGK, PHP, PKR, PLN, PYG, QAR, RON, RSD, RUB, RWF, SAR, SBD, SCR, SDG, SEK,
+    SGD, SHP, SLL, SOS, SRD, SSP, STD, SYP, SZL, THB, TJS, TMT, TND, TOP, TRY, TTD,
+    TWD, TZS, UAH, UGX, USD, USN, UYI, UYU, UZS, VEF, VND, VUV, WST, XAF, XAG, XAU,
+    XBA, XBB, XBC, XBD, XCD, XDR, XFU, XOF, XPD, XPF, XPT, XSU, XTS, XUA, XXX, YER,
+    ZAR, ZMW
+}
+
+enum AccountType {    
+    Check, Loan, Interest, Property, Fund
+}
+
+relationship OneToOne {
+    BankAccountInterest{creditedAccountId} to BankAccount,
+    BankTransaction{catId} to BankCategory,
+    BankTransaction{accountId} to BankAccount,
+    RebaseHistory{transactionId} to BankTransaction,
+    BankProject{mainAccountId} to BankAccount,
+    BankStream{mainAccountId} to BankAccount,
+    BankProjectTransaction{transactionId} to BankTransaction,
+    BankProjectTransaction{projectId} to BankProject,
+    BankStreamTransaction{transactionId} to BankTransaction,
+    BankStreamTransaction{streamId} to BankStream
+}
+
+relationship OneToMany {
+	BankCategory to Automatch{category},
+}
+
+relationship ManyToOne {
+	BankAccount{institution} to BankInstitution
+}
+
+dto * with mapstruct
+service * with serviceClass
+paginate * with infinite-scroll
+    
