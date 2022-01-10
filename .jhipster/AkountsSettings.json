@@ -1,0 +1,24 @@
+{
+  "name": "AkountsSettings",
+  "fields": [
+    {
+      "fieldName": "settingKey",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "settingVal",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [],
+  "entityTableName": "akounts_settings",
+  "dto": "mapstruct",
+  "pagination": "infinite-scroll",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": ["akounts"],
+  "changelogDate": "20220110204654"
+}

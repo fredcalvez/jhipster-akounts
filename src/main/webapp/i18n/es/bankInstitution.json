@@ -1,0 +1,28 @@
+{
+  "akountsApp": {
+    "bankInstitution": {
+      "home": {
+        "title": "Bank Institutions",
+        "refreshListLabel": "Refrescar lista",
+        "createLabel": "Crear nuevo Bank Institution",
+        "createOrEditLabel": "Crear o editar Bank Institution",
+        "notFound": "Ningún Bank Institutions encontrado"
+      },
+      "created": "Un nuevo Bank Institution ha sido creado con el identificador {{ param }}",
+      "updated": "Un Bank Institution ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Bank Institution ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Bank Institution {{ id }}?"
+      },
+      "detail": {
+        "title": "Bank Institution"
+      },
+      "id": "ID",
+      "institutionLabel": "Institution Label",
+      "code": "Code",
+      "active": "Active",
+      "currency": "Currency",
+      "isoCountryCode": "Iso Country Code"
+    }
+  }
+}
