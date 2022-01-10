@@ -1,0 +1,32 @@
+{
+  "name": "BankSaving",
+  "fields": [
+    {
+      "fieldName": "summaryDate",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "amount",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "goal",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "reach",
+      "fieldType": "BigDecimal"
+    }
+  ],
+  "relationships": [],
+  "entityTableName": "bank_saving",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": ["akounts"],
+  "changelogDate": "20220110130204"
+}

@@ -1,0 +1,15 @@
+{
+  "name": "BankStreamTransaction",
+  "fields": [],
+  "relationships": [],
+  "entityTableName": "bank_stream_transaction",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": ["akounts"],
+  "changelogDate": "20220110130208"
+}

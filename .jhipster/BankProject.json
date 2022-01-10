@@ -1,0 +1,32 @@
+{
+  "name": "BankProject",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "projectType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "initialValue",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "currentValue",
+      "fieldType": "BigDecimal"
+    }
+  ],
+  "relationships": [],
+  "entityTableName": "bank_project",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": ["akounts"],
+  "changelogDate": "20220110130205"
+}

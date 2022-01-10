@@ -1,0 +1,52 @@
+{
+  "name": "BankAccountInterest",
+  "fields": [
+    {
+      "fieldName": "interest",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "period",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "interestType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "units",
+      "fieldType": "BigDecimal"
+    },
+    {
+      "fieldName": "startDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "endDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "scrappingURL",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "scrappingTag",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "scrappingTagBis",
+      "fieldType": "String"
+    }
+  ],
+  "relationships": [],
+  "entityTableName": "bank_account_interest",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": ["akounts"],
+  "changelogDate": "20220110130201"
+}

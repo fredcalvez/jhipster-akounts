@@ -1,0 +1,15 @@
+{
+  "name": "BankProjectTransaction",
+  "fields": [],
+  "relationships": [],
+  "entityTableName": "bank_project_transaction",
+  "dto": "no",
+  "pagination": "no",
+  "service": "no",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": ["akounts"],
+  "changelogDate": "20220110130206"
+}
