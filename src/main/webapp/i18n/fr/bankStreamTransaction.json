@@ -1,0 +1,25 @@
+{
+  "akountsApp": {
+    "bankStreamTransaction": {
+      "home": {
+        "title": "BankStreamTransactions",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Bank Stream Transaction",
+        "createOrEditLabel": "Créer ou éditer un Bank Stream Transaction",
+        "notFound": "Aucun Bank Stream Transaction trouvé"
+      },
+      "created": "Un nouveau Bank Stream Transaction a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Bank Stream Transaction avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Bank Stream Transaction avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Bank Stream Transaction {{ id }} ?"
+      },
+      "detail": {
+        "title": "Bank Stream Transaction"
+      },
+      "id": "ID",
+      "transactionId": "Transaction Id",
+      "streamId": "Stream Id"
+    }
+  }
+}

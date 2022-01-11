@@ -1,0 +1,31 @@
+{
+  "name": "BankTag",
+  "fields": [
+    {
+      "fieldName": "tag",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "useCount",
+      "fieldType": "Integer"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "bankVendor",
+      "otherEntityRelationshipName": "bankTag",
+      "relationshipName": "vendor"
+    }
+  ],
+  "entityTableName": "bank_tag",
+  "dto": "mapstruct",
+  "pagination": "infinite-scroll",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": ["akounts"],
+  "changelogDate": "20220111204320"
+}

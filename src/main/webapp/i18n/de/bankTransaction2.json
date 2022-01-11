@@ -1,0 +1,23 @@
+{
+  "akountsApp": {
+    "bankTransaction2": {
+      "home": {
+        "title": "Bank Transaction 2 S",
+        "refreshListLabel": "Liste aktualisieren",
+        "createLabel": "Bank Transaction 2 erstellen",
+        "createOrEditLabel": "Bank Transaction 2 erstellen oder bearbeiten",
+        "notFound": "Keine Bank Transaction 2 S gefunden"
+      },
+      "created": "Bank Transaction 2 erstellt mit ID {{ param }}",
+      "updated": "Bank Transaction 2 aktualisiert mit ID {{ param }}",
+      "deleted": "Bank Transaction 2 gelöscht mit ID {{ param }}",
+      "delete": {
+        "question": "Soll Bank Transaction 2 {{ id }} wirklich dauerhaft gelöscht werden?"
+      },
+      "detail": {
+        "title": "Bank Transaction 2"
+      },
+      "id": "ID"
+    }
+  }
+}
