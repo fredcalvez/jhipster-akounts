@@ -1,0 +1,29 @@
+{
+  "akountsApp": {
+    "bridgeAccount": {
+      "home": {
+        "title": "BridgeAccounts",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Bridge Account",
+        "createOrEditLabel": "Créer ou éditer un Bridge Account",
+        "notFound": "Aucun Bridge Account trouvé"
+      },
+      "created": "Un nouveau Bridge Account a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Bridge Account avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Bridge Account avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Bridge Account {{ id }} ?"
+      },
+      "detail": {
+        "title": "Bridge Account"
+      },
+      "id": "ID",
+      "bridgeAccountId": "Bridge Account Id",
+      "type": "Type",
+      "status": "Status",
+      "balance": "Balance",
+      "isoCurrencyCode": "Iso Currency Code",
+      "name": "Name"
+    }
+  }
+}
