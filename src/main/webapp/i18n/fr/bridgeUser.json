@@ -1,0 +1,27 @@
+{
+  "akountsApp": {
+    "bridgeUser": {
+      "home": {
+        "title": "BridgeUsers",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Bridge User",
+        "createOrEditLabel": "Créer ou éditer un Bridge User",
+        "notFound": "Aucun Bridge User trouvé"
+      },
+      "created": "Un nouveau Bridge User a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Bridge User avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Bridge User avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Bridge User {{ id }} ?"
+      },
+      "detail": {
+        "title": "Bridge User"
+      },
+      "id": "ID",
+      "uuid": "Uuid",
+      "email": "Email",
+      "pass": "Pass",
+      "lastLoginDate": "Last Login Date"
+    }
+  }
+}

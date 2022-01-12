@@ -1,0 +1,26 @@
+{
+  "akountsApp": {
+    "bankTag": {
+      "home": {
+        "title": "BankTags",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Bank Tag",
+        "createOrEditLabel": "Créer ou éditer un Bank Tag",
+        "notFound": "Aucun Bank Tag trouvé"
+      },
+      "created": "Un nouveau Bank Tag a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Bank Tag avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Bank Tag avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Bank Tag {{ id }} ?"
+      },
+      "detail": {
+        "title": "Bank Tag"
+      },
+      "id": "ID",
+      "tag": "Tag",
+      "useCount": "Use Count",
+      "vendor": "Vendor"
+    }
+  }
+}

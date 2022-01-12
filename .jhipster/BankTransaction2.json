@@ -1,0 +1,15 @@
+{
+  "name": "BankTransaction2",
+  "fields": [],
+  "relationships": [],
+  "entityTableName": "bank_transaction_2",
+  "dto": "mapstruct",
+  "pagination": "infinite-scroll",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": ["akounts"],
+  "changelogDate": "20220112145124"
+}

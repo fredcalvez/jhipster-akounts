@@ -1,0 +1,30 @@
+{
+  "name": "BankProjectTransaction",
+  "fields": [],
+  "relationships": [
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "bankTransaction",
+      "otherEntityRelationshipName": "bankProjectTransaction",
+      "relationshipName": "transactionId",
+      "ownerSide": true
+    },
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "bankProject",
+      "otherEntityRelationshipName": "bankProjectTransaction",
+      "relationshipName": "projectId",
+      "ownerSide": true
+    }
+  ],
+  "entityTableName": "bank_project_transaction",
+  "dto": "mapstruct",
+  "pagination": "infinite-scroll",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": ["akounts"],
+  "changelogDate": "20220112145112"
+}

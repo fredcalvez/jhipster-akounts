@@ -1,0 +1,27 @@
+{
+  "akountsApp": {
+    "bridgeRun": {
+      "home": {
+        "title": "Bridge Runs",
+        "refreshListLabel": "Refrescar lista",
+        "createLabel": "Crear nuevo Bridge Run",
+        "createOrEditLabel": "Crear o editar Bridge Run",
+        "notFound": "Ningún Bridge Runs encontrado"
+      },
+      "created": "Un nuevo Bridge Run ha sido creado con el identificador {{ param }}",
+      "updated": "Un Bridge Run ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Bridge Run ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Bridge Run {{ id }}?"
+      },
+      "detail": {
+        "title": "Bridge Run"
+      },
+      "id": "ID",
+      "runType": "Run Type",
+      "runStatus": "Run Status",
+      "runStart": "Run Start",
+      "runEnd": "Run End"
+    }
+  }
+}

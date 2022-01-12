@@ -1,0 +1,26 @@
+{
+  "akountsApp": {
+    "bankTag": {
+      "home": {
+        "title": "Bank Tags",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Bank Tag",
+        "createOrEditLabel": "Create or edit a Bank Tag",
+        "notFound": "No Bank Tags found"
+      },
+      "created": "A new Bank Tag is created with identifier {{ param }}",
+      "updated": "A Bank Tag is updated with identifier {{ param }}",
+      "deleted": "A Bank Tag is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Bank Tag {{ id }}?"
+      },
+      "detail": {
+        "title": "Bank Tag"
+      },
+      "id": "ID",
+      "tag": "Tag",
+      "useCount": "Use Count",
+      "vendor": "Vendor"
+    }
+  }
+}
