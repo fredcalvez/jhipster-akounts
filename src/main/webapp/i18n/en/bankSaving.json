@@ -1,0 +1,27 @@
+{
+  "akountsApp": {
+    "bankSaving": {
+      "home": {
+        "title": "Bank Savings",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Bank Saving",
+        "createOrEditLabel": "Create or edit a Bank Saving",
+        "notFound": "No Bank Savings found"
+      },
+      "created": "A new Bank Saving is created with identifier {{ param }}",
+      "updated": "A Bank Saving is updated with identifier {{ param }}",
+      "deleted": "A Bank Saving is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Bank Saving {{ id }}?"
+      },
+      "detail": {
+        "title": "Bank Saving"
+      },
+      "id": "ID",
+      "summaryDate": "Summary Date",
+      "amount": "Amount",
+      "goal": "Goal",
+      "reach": "Reach"
+    }
+  }
+}

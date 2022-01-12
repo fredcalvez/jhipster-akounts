@@ -1,0 +1,33 @@
+{
+  "name": "BridgeRun",
+  "fields": [
+    {
+      "fieldName": "runType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "runStatus",
+      "fieldType": "Status",
+      "fieldValues": "ToDo,Doing,Done,Pending,InProgess,Finished,Error"
+    },
+    {
+      "fieldName": "runStart",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "runEnd",
+      "fieldType": "Instant"
+    }
+  ],
+  "relationships": [],
+  "entityTableName": "bridge_run",
+  "dto": "mapstruct",
+  "pagination": "infinite-scroll",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": ["akounts"],
+  "changelogDate": "20220112205237"
+}

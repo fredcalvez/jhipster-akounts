@@ -1,0 +1,36 @@
+{
+  "name": "PlaidRun",
+  "fields": [
+    {
+      "fieldName": "runType",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "runStatus",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "runItemId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "runStart",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "runEnd",
+      "fieldType": "Instant"
+    }
+  ],
+  "relationships": [],
+  "entityTableName": "plaid_run",
+  "dto": "mapstruct",
+  "pagination": "infinite-scroll",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": ["akounts"],
+  "changelogDate": "20220112205246"
+}

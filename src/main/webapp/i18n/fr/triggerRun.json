@@ -1,0 +1,28 @@
+{
+  "akountsApp": {
+    "triggerRun": {
+      "home": {
+        "title": "TriggerRuns",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Trigger Run",
+        "createOrEditLabel": "Créer ou éditer un Trigger Run",
+        "notFound": "Aucun Trigger Run trouvé"
+      },
+      "created": "Un nouveau Trigger Run a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Trigger Run avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Trigger Run avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Trigger Run {{ id }} ?"
+      },
+      "detail": {
+        "title": "Trigger Run"
+      },
+      "id": "ID",
+      "runType": "Run Type",
+      "status": "Status",
+      "addDate": "Add Date",
+      "startDate": "Start Date",
+      "endDate": "End Date"
+    }
+  }
+}
