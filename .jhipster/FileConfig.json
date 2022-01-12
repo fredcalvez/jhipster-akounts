@@ -1,0 +1,76 @@
+{
+  "name": "FileConfig",
+  "fields": [
+    {
+      "fieldName": "filename",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "amount",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "amountIn",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "amountOut",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "accountNum",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "transactionDate",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "dateFormat",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "fieldSeparator",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "hasHeader",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "note",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "locale",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "multipleAccount",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "encoding",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "sign",
+      "fieldType": "Integer"
+    }
+  ],
+  "relationships": [],
+  "entityTableName": "file_config",
+  "dto": "mapstruct",
+  "pagination": "infinite-scroll",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": ["akounts"],
+  "changelogDate": "20220112151857"
+}

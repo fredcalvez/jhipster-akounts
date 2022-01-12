@@ -1,0 +1,23 @@
+{
+  "akountsApp": {
+    "plaid": {
+      "home": {
+        "title": "Plaids",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Plaid",
+        "createOrEditLabel": "Créer ou éditer un Plaid",
+        "notFound": "Aucun Plaid trouvé"
+      },
+      "created": "Un nouveau Plaid a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Plaid avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Plaid avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Plaid {{ id }} ?"
+      },
+      "detail": {
+        "title": "Plaid"
+      },
+      "id": "ID"
+    }
+  }
+}

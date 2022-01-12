@@ -1,0 +1,25 @@
+{
+  "akountsApp": {
+    "bankProjectTransaction": {
+      "home": {
+        "title": "Bank Project Transactions",
+        "refreshListLabel": "Refrescar lista",
+        "createLabel": "Crear nuevo Bank Project Transaction",
+        "createOrEditLabel": "Crear o editar Bank Project Transaction",
+        "notFound": "Ningún Bank Project Transactions encontrado"
+      },
+      "created": "Un nuevo Bank Project Transaction ha sido creado con el identificador {{ param }}",
+      "updated": "Un Bank Project Transaction ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Bank Project Transaction ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Bank Project Transaction {{ id }}?"
+      },
+      "detail": {
+        "title": "Bank Project Transaction"
+      },
+      "id": "ID",
+      "transactionId": "Transaction Id",
+      "projectId": "Project Id"
+    }
+  }
+}

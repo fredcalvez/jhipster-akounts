@@ -1,0 +1,33 @@
+{
+  "akountsApp": {
+    "bankAccountInterest": {
+      "home": {
+        "title": "Bank Account Interests",
+        "refreshListLabel": "Liste aktualisieren",
+        "createLabel": "Bank Account Interest erstellen",
+        "createOrEditLabel": "Bank Account Interest erstellen oder bearbeiten",
+        "notFound": "Keine Bank Account Interests gefunden"
+      },
+      "created": "Bank Account Interest erstellt mit ID {{ param }}",
+      "updated": "Bank Account Interest aktualisiert mit ID {{ param }}",
+      "deleted": "Bank Account Interest gelöscht mit ID {{ param }}",
+      "delete": {
+        "question": "Soll Bank Account Interest {{ id }} wirklich dauerhaft gelöscht werden?"
+      },
+      "detail": {
+        "title": "Bank Account Interest"
+      },
+      "id": "ID",
+      "interest": "Interest",
+      "period": "Period",
+      "interestType": "Interest Type",
+      "units": "Units",
+      "startDate": "Start Date",
+      "endDate": "End Date",
+      "scrappingURL": "Scrapping URL",
+      "scrappingTag": "Scrapping Tag",
+      "scrappingTagBis": "Scrapping Tag Bis",
+      "creditedAccountId": "Credited Account Id"
+    }
+  }
+}
