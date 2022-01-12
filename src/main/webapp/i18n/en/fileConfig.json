@@ -1,0 +1,38 @@
+{
+  "akountsApp": {
+    "fileConfig": {
+      "home": {
+        "title": "File Configs",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new File Config",
+        "createOrEditLabel": "Create or edit a File Config",
+        "notFound": "No File Configs found"
+      },
+      "created": "A new File Config is created with identifier {{ param }}",
+      "updated": "A File Config is updated with identifier {{ param }}",
+      "deleted": "A File Config is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete File Config {{ id }}?"
+      },
+      "detail": {
+        "title": "File Config"
+      },
+      "id": "ID",
+      "filename": "Filename",
+      "description": "Description",
+      "amount": "Amount",
+      "amountIn": "Amount In",
+      "amountOut": "Amount Out",
+      "accountNum": "Account Num",
+      "transactionDate": "Transaction Date",
+      "dateFormat": "Date Format",
+      "fieldSeparator": "Field Separator",
+      "hasHeader": "Has Header",
+      "note": "Note",
+      "locale": "Locale",
+      "multipleAccount": "Multiple Account",
+      "encoding": "Encoding",
+      "sign": "Sign"
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "akountsApp": {
+    "plaidRun": {
+      "home": {
+        "title": "Plaid Runs",
+        "refreshListLabel": "Liste aktualisieren",
+        "createLabel": "Plaid Run erstellen",
+        "createOrEditLabel": "Plaid Run erstellen oder bearbeiten",
+        "notFound": "Keine Plaid Runs gefunden"
+      },
+      "created": "Plaid Run erstellt mit ID {{ param }}",
+      "updated": "Plaid Run aktualisiert mit ID {{ param }}",
+      "deleted": "Plaid Run gelöscht mit ID {{ param }}",
+      "delete": {
+        "question": "Soll Plaid Run {{ id }} wirklich dauerhaft gelöscht werden?"
+      },
+      "detail": {
+        "title": "Plaid Run"
+      },
+      "id": "ID",
+      "runType": "Run Type",
+      "runStatus": "Run Status",
+      "runItemId": "Run Item Id",
+      "runStart": "Run Start",
+      "runEnd": "Run End"
+    }
+  }
+}

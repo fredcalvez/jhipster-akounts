@@ -1,0 +1,28 @@
+{
+  "akountsApp": {
+    "bankProject": {
+      "home": {
+        "title": "BankProjects",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Bank Project",
+        "createOrEditLabel": "Créer ou éditer un Bank Project",
+        "notFound": "Aucun Bank Project trouvé"
+      },
+      "created": "Un nouveau Bank Project a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Bank Project avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Bank Project avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Bank Project {{ id }} ?"
+      },
+      "detail": {
+        "title": "Bank Project"
+      },
+      "id": "ID",
+      "name": "Name",
+      "projectType": "Project Type",
+      "initialValue": "Initial Value",
+      "currentValue": "Current Value",
+      "mainAccountId": "Main Account Id"
+    }
+  }
+}
