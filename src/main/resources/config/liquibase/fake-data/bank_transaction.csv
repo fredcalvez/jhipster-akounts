@@ -1,0 +1,11 @@
+id;transaction_id;transaction_date;description;local_amount;local_currency;amount;currency;note;year;month;week;categorized_date;add_date;checked;rebased_date;deleted
+1;Future;2022-01-12T01:13:06;Delaware;24862;TTD;87421;SYP;indexing;45268;92007;7940;2022-01-11T22:20:51;2022-01-12T15:32:25;false;2022-01-12T11:06:02;false
+2;B2B;2022-01-12T14:54:53;Computer Quality;85906;UGX;58065;BOB;primary Branding;5040;65584;79523;2022-01-12T15:32:41;2022-01-12T18:34:05;true;2022-01-12T06:16:50;false
+3;Loan Global Peso;2022-01-12T07:47:47;Specialist Operations Configuration;95700;CHW;25357;XPD;Tools;21820;6100;45290;2022-01-12T12:11:35;2022-01-12T13:11:37;true;2022-01-12T14:34:55;false
+4;olive withdrawal Security;2022-01-12T00:46:41;Assimilated neural;67541;AUD;22452;AOA;navigate Bedfordshire Cambridgeshire;75895;91974;99073;2022-01-12T16:13:33;2022-01-11T21:22:14;true;2022-01-12T00:30:48;true
+5;Unions;2022-01-11T23:26:44;synthesize Florida Fresh;6664;SHP;87328;SBD;Salad Optimization;81601;92518;99177;2022-01-12T04:47:15;2022-01-12T15:49:32;false;2022-01-12T10:03:52;true
+6;Division;2022-01-12T19:47:57;background Virtual modular;29652;XXX;78427;VEF;invoice evolve;44801;18029;80049;2022-01-12T03:35:58;2022-01-11T23:54:22;true;2022-01-12T07:06:57;true
+7;projection microchip payment;2022-01-12T11:10:14;info-mediaries;19242;XBA;72542;KZT;Lead backing;11987;72814;86533;2022-01-12T04:12:18;2022-01-11T20:53:31;true;2022-01-12T07:32:18;false
+8;Gloves ADP;2022-01-12T07:10:12;Advanced syndicate Jersey;2005;INR;62509;COU;deposit International bandwidth;76134;52060;44670;2022-01-12T04:34:41;2022-01-12T18:09:01;true;2022-01-12T09:08:40;false
+9;Principal Ruble;2022-01-12T15:14:29;Tasty;54821;STD;72178;MKD;application Ohio;18260;58036;99788;2022-01-12T04:37:42;2022-01-12T01:46:24;true;2022-01-12T17:07:22;true
+10;JBOD Refined navigate;2022-01-12T08:08:09;Associate;55746;XXX;28304;CDF;Assistant content;61115;45616;1654;2022-01-12T03:39:46;2022-01-12T07:32:37;false;2022-01-12T18:55:18;true

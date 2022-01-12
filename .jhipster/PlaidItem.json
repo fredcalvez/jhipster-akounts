@@ -1,0 +1,36 @@
+{
+  "name": "PlaidItem",
+  "fields": [
+    {
+      "fieldName": "itemId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "institutionId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "accessToken",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "addedDate",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "updateDate",
+      "fieldType": "Instant"
+    }
+  ],
+  "relationships": [],
+  "entityTableName": "plaid_item",
+  "dto": "mapstruct",
+  "pagination": "infinite-scroll",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": ["akounts"],
+  "changelogDate": "20220112205245"
+}

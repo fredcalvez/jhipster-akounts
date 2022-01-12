@@ -1,0 +1,26 @@
+{
+  "akountsApp": {
+    "bankStream": {
+      "home": {
+        "title": "Bank Streams",
+        "refreshListLabel": "Liste aktualisieren",
+        "createLabel": "Bank Stream erstellen",
+        "createOrEditLabel": "Bank Stream erstellen oder bearbeiten",
+        "notFound": "Keine Bank Streams gefunden"
+      },
+      "created": "Bank Stream erstellt mit ID {{ param }}",
+      "updated": "Bank Stream aktualisiert mit ID {{ param }}",
+      "deleted": "Bank Stream gelöscht mit ID {{ param }}",
+      "delete": {
+        "question": "Soll Bank Stream {{ id }} wirklich dauerhaft gelöscht werden?"
+      },
+      "detail": {
+        "title": "Bank Stream"
+      },
+      "id": "ID",
+      "name": "Name",
+      "streamType": "Stream Type",
+      "mainAccountId": "Main Account Id"
+    }
+  }
+}

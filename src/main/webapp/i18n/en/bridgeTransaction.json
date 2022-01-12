@@ -1,0 +1,35 @@
+{
+  "akountsApp": {
+    "bridgeTransaction": {
+      "home": {
+        "title": "Bridge Transactions",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Bridge Transaction",
+        "createOrEditLabel": "Create or edit a Bridge Transaction",
+        "notFound": "No Bridge Transactions found"
+      },
+      "created": "A new Bridge Transaction is created with identifier {{ param }}",
+      "updated": "A Bridge Transaction is updated with identifier {{ param }}",
+      "deleted": "A Bridge Transaction is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Bridge Transaction {{ id }}?"
+      },
+      "detail": {
+        "title": "Bridge Transaction"
+      },
+      "id": "ID",
+      "transactionId": "Transaction Id",
+      "transactionType": "Transaction Type",
+      "accountId": "Account Id",
+      "amount": "Amount",
+      "isoCurrencyCode": "Iso Currency Code",
+      "transactionDate": "Transaction Date",
+      "description": "Description",
+      "isFuture": "Is Future",
+      "isDeleted": "Is Deleted",
+      "addedDate": "Added Date",
+      "updatedAt": "Updated At",
+      "checked": "Checked"
+    }
+  }
+}

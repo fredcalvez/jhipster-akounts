@@ -1,0 +1,25 @@
+{
+  "akountsApp": {
+    "textCleaner": {
+      "home": {
+        "title": "TextCleaners",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Text Cleaner",
+        "createOrEditLabel": "Créer ou éditer un Text Cleaner",
+        "notFound": "Aucun Text Cleaner trouvé"
+      },
+      "created": "Un nouveau Text Cleaner a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Text Cleaner avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Text Cleaner avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Text Cleaner {{ id }} ?"
+      },
+      "detail": {
+        "title": "Text Cleaner"
+      },
+      "id": "ID",
+      "type": "Type",
+      "rule": "Rule"
+    }
+  }
+}

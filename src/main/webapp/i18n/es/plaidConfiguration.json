@@ -1,0 +1,26 @@
+{
+  "akountsApp": {
+    "plaidConfiguration": {
+      "home": {
+        "title": "Plaid Configurations",
+        "refreshListLabel": "Refrescar lista",
+        "createLabel": "Crear nuevo Plaid Configuration",
+        "createOrEditLabel": "Crear o editar Plaid Configuration",
+        "notFound": "Ningún Plaid Configurations encontrado"
+      },
+      "created": "Un nuevo Plaid Configuration ha sido creado con el identificador {{ param }}",
+      "updated": "Un Plaid Configuration ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Plaid Configuration ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Plaid Configuration {{ id }}?"
+      },
+      "detail": {
+        "title": "Plaid Configuration"
+      },
+      "id": "ID",
+      "environement": "Environement",
+      "key": "Key",
+      "value": "Value"
+    }
+  }
+}
