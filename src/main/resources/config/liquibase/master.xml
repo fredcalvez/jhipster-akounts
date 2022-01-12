@@ -15,7 +15,44 @@
     <property name="datetimeType" value="datetime" dbms="oracle, mssql, postgresql, h2"/>
 
     <include file="config/liquibase/changelog/00000000000000_initial_schema.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220112151835_added_entity_AkountsSettings.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220112151836_added_entity_Automatch.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220112151837_added_entity_BankCategory.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220112151838_added_entity_BankAccount.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220112151839_added_entity_BankInstitution.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220112151840_added_entity_BankAccountInterest.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220112151841_added_entity_BankTransaction.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220112151842_added_entity_RebaseHistory.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220112151843_added_entity_BankSaving.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220112151844_added_entity_BankProject.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220112151845_added_entity_BankProjectTransaction.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220112151846_added_entity_BankStream.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220112151847_added_entity_BankStreamTransaction.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220112151848_added_entity_BankTag.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220112151849_added_entity_BankTagTransaction.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220112151850_added_entity_BankVendor.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220112151851_added_entity_BankTransactionAutomatch.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220112151852_added_entity_BridgeAccount.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220112151853_added_entity_BridgeRun.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220112151854_added_entity_BridgeTransaction.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220112151855_added_entity_BridgeUser.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220112151856_added_entity_Budget.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220112151857_added_entity_FileConfig.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220112151858_added_entity_FileImport.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220112151859_added_entity_Plaid.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
+    <include file="config/liquibase/changelog/20220112151836_added_entity_constraints_Automatch.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220112151838_added_entity_constraints_BankAccount.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220112151840_added_entity_constraints_BankAccountInterest.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220112151841_added_entity_constraints_BankTransaction.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220112151842_added_entity_constraints_RebaseHistory.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220112151844_added_entity_constraints_BankProject.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220112151845_added_entity_constraints_BankProjectTransaction.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220112151846_added_entity_constraints_BankStream.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220112151847_added_entity_constraints_BankStreamTransaction.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220112151848_added_entity_constraints_BankTag.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220112151851_added_entity_constraints_BankTransactionAutomatch.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20220112151856_added_entity_constraints_Budget.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
     <!-- jhipster-needle-liquibase-add-incremental-changelog - JHipster will add incremental liquibase changelogs here -->
 </databaseChangeLog>

@@ -1,0 +1,23 @@
+{
+  "akountsApp": {
+    "plaid": {
+      "home": {
+        "title": "Plaids",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Plaid",
+        "createOrEditLabel": "Create or edit a Plaid",
+        "notFound": "No Plaids found"
+      },
+      "created": "A new Plaid is created with identifier {{ param }}",
+      "updated": "A Plaid is updated with identifier {{ param }}",
+      "deleted": "A Plaid is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Plaid {{ id }}?"
+      },
+      "detail": {
+        "title": "Plaid"
+      },
+      "id": "ID"
+    }
+  }
+}

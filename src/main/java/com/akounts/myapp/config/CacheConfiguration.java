@@ -48,6 +48,33 @@ public class CacheConfiguration {
             createCache(cm, com.akounts.myapp.domain.User.class.getName());
             createCache(cm, com.akounts.myapp.domain.Authority.class.getName());
             createCache(cm, com.akounts.myapp.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.akounts.myapp.domain.AkountsSettings.class.getName());
+            createCache(cm, com.akounts.myapp.domain.Automatch.class.getName());
+            createCache(cm, com.akounts.myapp.domain.BankCategory.class.getName());
+            createCache(cm, com.akounts.myapp.domain.BankCategory.class.getName() + ".automatches");
+            createCache(cm, com.akounts.myapp.domain.BankAccount.class.getName());
+            createCache(cm, com.akounts.myapp.domain.BankInstitution.class.getName());
+            createCache(cm, com.akounts.myapp.domain.BankAccountInterest.class.getName());
+            createCache(cm, com.akounts.myapp.domain.BankTransaction.class.getName());
+            createCache(cm, com.akounts.myapp.domain.RebaseHistory.class.getName());
+            createCache(cm, com.akounts.myapp.domain.BankSaving.class.getName());
+            createCache(cm, com.akounts.myapp.domain.BankProject.class.getName());
+            createCache(cm, com.akounts.myapp.domain.BankProjectTransaction.class.getName());
+            createCache(cm, com.akounts.myapp.domain.BankStream.class.getName());
+            createCache(cm, com.akounts.myapp.domain.BankStreamTransaction.class.getName());
+            createCache(cm, com.akounts.myapp.domain.BankTag.class.getName());
+            createCache(cm, com.akounts.myapp.domain.BankTagTransaction.class.getName());
+            createCache(cm, com.akounts.myapp.domain.BankVendor.class.getName());
+            createCache(cm, com.akounts.myapp.domain.BankVendor.class.getName() + ".bankTags");
+            createCache(cm, com.akounts.myapp.domain.BankTransactionAutomatch.class.getName());
+            createCache(cm, com.akounts.myapp.domain.BridgeAccount.class.getName());
+            createCache(cm, com.akounts.myapp.domain.BridgeRun.class.getName());
+            createCache(cm, com.akounts.myapp.domain.BridgeTransaction.class.getName());
+            createCache(cm, com.akounts.myapp.domain.BridgeUser.class.getName());
+            createCache(cm, com.akounts.myapp.domain.Budget.class.getName());
+            createCache(cm, com.akounts.myapp.domain.FileConfig.class.getName());
+            createCache(cm, com.akounts.myapp.domain.FileImport.class.getName());
+            createCache(cm, com.akounts.myapp.domain.Plaid.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }

@@ -1,0 +1,35 @@
+{
+  "name": "Budget",
+  "fields": [
+    {
+      "fieldName": "budgetDate",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "categorieLabel",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "amount",
+      "fieldType": "BigDecimal"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "many-to-one",
+      "otherEntityName": "bankCategory",
+      "otherEntityRelationshipName": "budget",
+      "relationshipName": "category"
+    }
+  ],
+  "entityTableName": "budget",
+  "dto": "mapstruct",
+  "pagination": "infinite-scroll",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": ["akounts"],
+  "changelogDate": "20220112151856"
+}

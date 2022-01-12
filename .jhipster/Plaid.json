@@ -1,0 +1,15 @@
+{
+  "name": "Plaid",
+  "fields": [],
+  "relationships": [],
+  "entityTableName": "plaid",
+  "dto": "mapstruct",
+  "pagination": "infinite-scroll",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": ["akounts"],
+  "changelogDate": "20220112151859"
+}

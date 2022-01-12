@@ -1,0 +1,29 @@
+{
+  "akountsApp": {
+    "bankCategory": {
+      "home": {
+        "title": "Bank Categories",
+        "refreshListLabel": "Liste aktualisieren",
+        "createLabel": "Bank Category erstellen",
+        "createOrEditLabel": "Bank Category erstellen oder bearbeiten",
+        "notFound": "Keine Bank Categories gefunden"
+      },
+      "created": "Bank Category erstellt mit ID {{ param }}",
+      "updated": "Bank Category aktualisiert mit ID {{ param }}",
+      "deleted": "Bank Category gelöscht mit ID {{ param }}",
+      "delete": {
+        "question": "Soll Bank Category {{ id }} wirklich dauerhaft gelöscht werden?"
+      },
+      "detail": {
+        "title": "Bank Category"
+      },
+      "id": "ID",
+      "parent": "Parent",
+      "categorieLabel": "Categorie Label",
+      "categorieDesc": "Categorie Desc",
+      "income": "Income",
+      "isexpense": "Isexpense",
+      "automatch": "Automatch"
+    }
+  }
+}
