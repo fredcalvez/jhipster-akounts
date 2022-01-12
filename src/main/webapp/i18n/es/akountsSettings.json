@@ -1,0 +1,25 @@
+{
+  "akountsApp": {
+    "akountsSettings": {
+      "home": {
+        "title": "Akounts Settings",
+        "refreshListLabel": "Refrescar lista",
+        "createLabel": "Crear nuevo Akounts Settings",
+        "createOrEditLabel": "Crear o editar Akounts Settings",
+        "notFound": "Ningún Akounts Settings encontrado"
+      },
+      "created": "Un nuevo Akounts Settings ha sido creado con el identificador {{ param }}",
+      "updated": "Un Akounts Settings ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Akounts Settings ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Akounts Settings {{ id }}?"
+      },
+      "detail": {
+        "title": "Akounts Settings"
+      },
+      "id": "ID",
+      "settingKey": "Setting Key",
+      "settingVal": "Setting Val"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "akountsApp": {
+    "bridge": {
+      "home": {
+        "title": "Bridges",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Bridge",
+        "createOrEditLabel": "Créer ou éditer un Bridge",
+        "notFound": "Aucun Bridge trouvé"
+      },
+      "created": "Un nouveau Bridge a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Bridge avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Bridge avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Bridge {{ id }} ?"
+      },
+      "detail": {
+        "title": "Bridge"
+      },
+      "id": "ID"
+    }
+  }
+}

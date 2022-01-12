@@ -1,0 +1,43 @@
+{
+  "name": "BankCategory",
+  "fields": [
+    {
+      "fieldName": "parent",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "categorieLabel",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "categorieDesc",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "income",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "isexpense",
+      "fieldType": "Boolean"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-many",
+      "otherEntityName": "automatch",
+      "otherEntityRelationshipName": "category",
+      "relationshipName": "automatch"
+    }
+  ],
+  "entityTableName": "bank_category",
+  "dto": "mapstruct",
+  "pagination": "infinite-scroll",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": ["akounts"],
+  "changelogDate": "20220112145104"
+}
