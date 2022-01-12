@@ -1,0 +1,23 @@
+{
+  "akountsApp": {
+    "bankTagTransaction": {
+      "home": {
+        "title": "BankTagTransactions",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Bank Tag Transaction",
+        "createOrEditLabel": "Créer ou éditer un Bank Tag Transaction",
+        "notFound": "Aucun Bank Tag Transaction trouvé"
+      },
+      "created": "Un nouveau Bank Tag Transaction a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Bank Tag Transaction avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Bank Tag Transaction avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Bank Tag Transaction {{ id }} ?"
+      },
+      "detail": {
+        "title": "Bank Tag Transaction"
+      },
+      "id": "ID"
+    }
+  }
+}

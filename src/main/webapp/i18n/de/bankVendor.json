@@ -1,0 +1,26 @@
+{
+  "akountsApp": {
+    "bankVendor": {
+      "home": {
+        "title": "Bank Vendors",
+        "refreshListLabel": "Liste aktualisieren",
+        "createLabel": "Bank Vendor erstellen",
+        "createOrEditLabel": "Bank Vendor erstellen oder bearbeiten",
+        "notFound": "Keine Bank Vendors gefunden"
+      },
+      "created": "Bank Vendor erstellt mit ID {{ param }}",
+      "updated": "Bank Vendor aktualisiert mit ID {{ param }}",
+      "deleted": "Bank Vendor gelöscht mit ID {{ param }}",
+      "delete": {
+        "question": "Soll Bank Vendor {{ id }} wirklich dauerhaft gelöscht werden?"
+      },
+      "detail": {
+        "title": "Bank Vendor"
+      },
+      "id": "ID",
+      "vendorName": "Vendor Name",
+      "useCount": "Use Count",
+      "bankTag": "Bank Tag"
+    }
+  }
+}

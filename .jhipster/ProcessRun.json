@@ -1,0 +1,45 @@
+{
+  "name": "ProcessRun",
+  "fields": [
+    {
+      "fieldName": "process",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "parentId",
+      "fieldType": "Integer"
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "Status",
+      "fieldValues": "ToDo,Doing,Done,Pending,InProgess,Finished,Error"
+    },
+    {
+      "fieldName": "returns",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "error",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "startTime",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "endTime",
+      "fieldType": "Instant"
+    }
+  ],
+  "relationships": [],
+  "entityTableName": "process_run",
+  "dto": "mapstruct",
+  "pagination": "infinite-scroll",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": ["akounts"],
+  "changelogDate": "20220112203635"
+}

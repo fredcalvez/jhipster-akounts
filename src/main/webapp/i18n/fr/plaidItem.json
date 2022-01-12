@@ -1,0 +1,28 @@
+{
+  "akountsApp": {
+    "plaidItem": {
+      "home": {
+        "title": "PlaidItems",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Plaid Item",
+        "createOrEditLabel": "Créer ou éditer un Plaid Item",
+        "notFound": "Aucun Plaid Item trouvé"
+      },
+      "created": "Un nouveau Plaid Item a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Plaid Item avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Plaid Item avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Plaid Item {{ id }} ?"
+      },
+      "detail": {
+        "title": "Plaid Item"
+      },
+      "id": "ID",
+      "itemId": "Item Id",
+      "institutionId": "Institution Id",
+      "accessToken": "Access Token",
+      "addedDate": "Added Date",
+      "updateDate": "Update Date"
+    }
+  }
+}

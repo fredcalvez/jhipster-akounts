@@ -1,0 +1,29 @@
+{
+  "akountsApp": {
+    "automatch": {
+      "home": {
+        "title": "Automatches",
+        "refreshListLabel": "Liste aktualisieren",
+        "createLabel": "Automatch erstellen",
+        "createOrEditLabel": "Automatch erstellen oder bearbeiten",
+        "notFound": "Keine Automatches gefunden"
+      },
+      "created": "Automatch erstellt mit ID {{ param }}",
+      "updated": "Automatch aktualisiert mit ID {{ param }}",
+      "deleted": "Automatch gelöscht mit ID {{ param }}",
+      "delete": {
+        "question": "Soll Automatch {{ id }} wirklich dauerhaft gelöscht werden?"
+      },
+      "detail": {
+        "title": "Automatch"
+      },
+      "id": "ID",
+      "matchstring": "Matchstring",
+      "updateTime": "Update Time",
+      "lastUsedTime": "Last Used Time",
+      "useCount": "Use Count",
+      "defaultTag": "Default Tag",
+      "category": "Category"
+    }
+  }
+}
