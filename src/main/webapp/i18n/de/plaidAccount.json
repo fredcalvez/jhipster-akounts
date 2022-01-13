@@ -1,0 +1,34 @@
+{
+  "akountsApp": {
+    "plaidAccount": {
+      "home": {
+        "title": "Plaid Accounts",
+        "refreshListLabel": "Liste aktualisieren",
+        "createLabel": "Plaid Account erstellen",
+        "createOrEditLabel": "Plaid Account erstellen oder bearbeiten",
+        "notFound": "Keine Plaid Accounts gefunden"
+      },
+      "created": "Plaid Account erstellt mit ID {{ param }}",
+      "updated": "Plaid Account aktualisiert mit ID {{ param }}",
+      "deleted": "Plaid Account gelöscht mit ID {{ param }}",
+      "delete": {
+        "question": "Soll Plaid Account {{ id }} wirklich dauerhaft gelöscht werden?"
+      },
+      "detail": {
+        "title": "Plaid Account"
+      },
+      "id": "ID",
+      "plaidAccountId": "Plaid Account Id",
+      "itemId": "Item Id",
+      "type": "Type",
+      "subtype": "Subtype",
+      "balanceAvailable": "Balance Available",
+      "balanceCurrent": "Balance Current",
+      "isoCurrencyCode": "Iso Currency Code",
+      "name": "Name",
+      "officialName": "Official Name",
+      "iban": "Iban",
+      "bic": "Bic"
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "akountsApp": {
+    "fileImport": {
+      "home": {
+        "title": "File Imports",
+        "refreshListLabel": "Refrescar lista",
+        "createLabel": "Crear nuevo File Import",
+        "createOrEditLabel": "Crear o editar File Import",
+        "notFound": "Ningún File Imports encontrado"
+      },
+      "created": "Un nuevo File Import ha sido creado con el identificador {{ param }}",
+      "updated": "Un File Import ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un File Import ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar File Import {{ id }}?"
+      },
+      "detail": {
+        "title": "File Import"
+      },
+      "id": "ID",
+      "fileName": "File Name",
+      "status": "Status",
+      "reviewDate": "Review Date",
+      "filePath": "File Path"
+    }
+  }
+}

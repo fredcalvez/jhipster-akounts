@@ -1,0 +1,35 @@
+{
+  "akountsApp": {
+    "plaidTransaction": {
+      "home": {
+        "title": "PlaidTransactions",
+        "refreshListLabel": "Actualiser la liste",
+        "createLabel": "Créer un nouveau Plaid Transaction",
+        "createOrEditLabel": "Créer ou éditer un Plaid Transaction",
+        "notFound": "Aucun Plaid Transaction trouvé"
+      },
+      "created": "Un nouveau Plaid Transaction a été créé avec l'identifiant {{ param }}",
+      "updated": "Le Plaid Transaction avec l'identifiant {{ param }} a été mis à jour",
+      "deleted": "Le Plaid Transaction avec l'identifiant {{ param }} a été supprimé",
+      "delete": {
+        "question": "Etes-vous certain de vouloir supprimer le Plaid Transaction {{ id }} ?"
+      },
+      "detail": {
+        "title": "Plaid Transaction"
+      },
+      "id": "ID",
+      "transactionId": "Transaction Id",
+      "transactionType": "Transaction Type",
+      "accountId": "Account Id",
+      "amount": "Amount",
+      "isoCurrencyCode": "Iso Currency Code",
+      "transactionDate": "Transaction Date",
+      "name": "Name",
+      "originalDescription": "Original Description",
+      "pending": "Pending",
+      "pendingTransactionId": "Pending Transaction Id",
+      "addedDate": "Added Date",
+      "checked": "Checked"
+    }
+  }
+}
