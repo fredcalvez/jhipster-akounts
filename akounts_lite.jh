@@ -1,0 +1,372 @@
+
+application {
+  config {
+    applicationType monolith,
+    baseName akounts,
+    packageName com.akounts.myapp,
+    serverPort 8080,
+    serviceDiscoveryType false,
+    authenticationType jwt,
+    cacheProvider ehcache,
+    enableHibernateCache true,
+    databaseType sql,
+    devDatabaseType mysql,
+    prodDatabaseType mariadb,
+    buildTool gradle,
+    enableTranslation true,
+    nativeLanguage en,
+    clientFramework react,
+    clientTheme Slate,
+    languages [en, fr, de, es]
+  }
+  entities *
+}
+
+entity AkountsSettings {
+    settingKey String,
+    settingVal String,
+}
+
+entity Automatch {
+    matchstring  String, 
+    updateTime   Instant,
+    lastUsedTime Instant,
+    useCount     Integer, 
+    defaultTag   String
+}
+
+entity BankCategory {
+    parent    Integer, 
+    categorieLabel  String, 
+    categorieDesc   String, 
+    income       Boolean,
+    isexpense      Boolean
+}
+
+entity BankAccount {
+    accountLabel     String, 
+    accountNumber    String, 
+    active           Boolean,
+    currency          Currency, 
+    initialAmount     BigDecimal,
+    initialAmountLocal BigDecimal,
+    accountType         AccountType, 
+    interest            BigDecimal,
+    nickname      String
+}
+
+entity BankInstitution {
+    institutionLabel String, 
+    code		     String, 
+    active           Boolean,
+    currency         Currency, 
+    isoCountryCode   String
+}
+
+entity BankAccountInterest {
+    interest          	BigDecimal,
+    period 				String, 
+    interestType       	String,                                                                                       
+    units               BigDecimal,         
+    startDate          	LocalDate , 
+    endDate            	LocalDate ,
+    scrappingURL        String, 
+    scrappingTag        String, 
+    scrappingTagBis    	String
+    }
+
+entity BankTransaction {
+    transactionId 		String, 
+    transactionDate 	LocalDate ,
+    description      	String, 
+    localAmount     	BigDecimal,
+    localCurrency    	Currency,
+    amount            	BigDecimal,
+    currency          	Currency,
+    note              	String, 
+    year             	Integer,
+    month             	Integer,
+    week              	Integer,
+    categorizedDate 	Instant,
+    addDate         	Instant,
+    checked          	Boolean, 
+    rebasedDate     	Instant,
+    deleted          	Boolean,
+    tag              	String,
+    createdOn      		Instant,
+    updatedOn       	Instant,
+    version          	Integer
+}
+
+entity RebaseHistory {
+    oldValue       BigDecimal,
+    oldCurrency   Currency,
+    newValue       BigDecimal,
+    newCurrency   Currency,          
+    runDate       Instant
+}
+
+entity BankSaving{
+    summaryDate Instant,
+    amount       BigDecimal,
+    goal          BigDecimal,
+    reach         BigDecimal
+}
+
+entity BankProject{
+    name           String,
+    projectType    String,
+    initialValue   BigDecimal,
+    currentValue   BigDecimal
+}
+
+entity BankProjectTransaction{
+}
+
+entity BankStream{
+    name  		String,
+    streamType  String
+}
+
+entity BankStreamTransaction{
+}
+
+entity BankTag{
+	tag 		String,
+    useCount	Integer
+}
+
+entity BankTagTransaction{
+} 
+
+entity BankVendor{
+	vendorName	String,
+    useCount	Integer
+}
+
+entity BankTransaction{
+    transactionId  	String,
+    transactionDate Instant
+    description     String,
+    localAmount    	BigDecimal,
+    localCurrency  	Currency,
+    amount          BigDecimal,
+    currency        Currency,
+    note            String,
+    year            Integer,
+    month           Integer,
+    week            Integer,
+    categorizedDate Instant,
+    addDate         Instant,
+    checked         Boolean,
+    rebasedDate     Instant,
+    deleted         Boolean
+}
+
+entity BankTransactionAutomatch{
+}
+
+entity BridgeAccount{
+    bridgeAccountId  String,
+    type             String,
+    status           String,
+    balance          BigDecimal,
+    isoCurrencyCode  Currency,
+    name             String
+}
+
+entity BridgeRun{
+    runType   String,
+    runStatus Status,
+    runStart  Instant,
+    runEnd    Instant
+}
+
+entity BridgeTransaction{
+    transactionId    String,
+    transactionType  String,
+    accountId        String,
+    amount           BigDecimal,
+    isoCurrencyCode  Currency,
+    transactionDate  Instant,
+    description      String,
+    isFuture        Boolean,
+    isDeleted       Boolean,
+    addedDate       Instant,
+    updatedAt       Instant,
+    checked          Boolean
+}
+
+entity BridgeUser{
+    uuid            String,
+    email           String,
+    pass            String,
+    lastLoginDate   Instant
+}
+
+entity Budget{
+    budgetDate     Instant,
+    categorieLabel String,
+    amount         BigDecimal
+}
+
+entity FileConfig{
+    filename  			String,
+    description      	String,
+    amount 		      	Integer,
+    amountIn 		    Integer,
+    amountOut 		    Integer,
+    accountNum			Integer,
+    transactionDate		Integer,
+    dateFormat			String,
+    fieldSeparator		String,	
+    hasHeader			Integer,
+    note				String,
+    locale				Integer,
+	multipleAccount		Integer,
+    encoding			String,
+    sign				Integer
+}
+
+entity FileImport{
+    fileName    String,
+    status      Status,
+    reviewDate 	Instant,
+    filePath   	String
+}
+
+
+entity PlaidAccount{
+	plaidAccountId   String,
+    itemId           String,
+    type             String,
+    subtype          String,
+    balanceAvailable BigDecimal,
+    balanceCurrent   BigDecimal,
+    isoCurrencyCode  Currency, 
+    name             String,
+    officialName     String,
+    iban             String,
+    bic              String
+}
+
+entity PlaidConfiguration{
+	environement String,
+    key          String,
+    value        String
+}
+
+entity PlaidItem{
+    itemId        String,
+    institutionId String,
+    accessToken   String,
+    addedDate     Instant,
+    updateDate    Instant
+}
+
+entity PlaidRun{
+    runType    String,
+    runStatus  String,
+    runItemId  String,
+    runStart   Instant,
+    runEnd     Instant
+}
+
+entity PlaidTransaction{
+    transactionId         String,
+    transactionType       String,
+    accountId             String,
+    amount                BigDecimal,
+    isoCurrencyCode       String,
+    transactionDate       Instant,
+    name                  String,
+    originalDescription   String,
+    pending               Boolean
+    pendingTransactionId  String,
+    addedDate             Instant,
+    checked               Boolean
+}
+
+entity ProcessRun{
+    process    String,
+    parentId   Integer,
+    status     Status,
+    returns    String,
+    error      String,
+    startTime  Instant,
+    endTime    Instant
+}
+
+entity TextCleaner{
+type String,
+    rule String
+}
+
+entity TransactionDuplicates{
+    isduplicate          Boolean,
+    dateAdd             Instant,
+    action             String,
+    checked              Boolean
+}
+
+entity TriggerRun{
+    runType   Integer,
+    status    Integer,
+    addDate  Instant,
+    startDate Instant,
+    endDate   Instant
+}
+
+
+
+enum Currency {
+    AED, AFN, ALL, AMD, ANG, AOA, ARS, AUD, AWG, AZN, BAM, BBD, BDT, BGN, BHD, BIF, BMD, BND, BOB, BOV, BRL, BSD, BTN, BWP, BYN, BYR, BZD, CAD, CDF, CHE, CHF, CHW,
+    CLF, CLP, CNY, COP, COU, CRC, CUC, CUP, CVE, CZK, DJF, DKK, DOP, DZD, EGP, ERN, ETB, EUR, FJD, FKP, GBP, GEL, GHS, GIP, GMD, GNF, GTQ, GYD, HKD, HNL, HRK, HTG,
+    HUF, IDR, ILS, INR, IQD, IRR, ISK, JMD, JOD, JPY, KES, KGS, KHR, KMF, KPW, KRW, KWD, KYD, KZT, LAK, LBP, LKR, LRD, LSL, LYD, MAD, MDL, MGA, MKD, MMK, MNT, MOP,
+    MRO, MUR, MVR, MWK, MXN, MXV, MYR, MZN, NAD, NGN, NIO, NOK, NPR, NZD, OMR, PAB, PEN, PGK, PHP, PKR, PLN, PYG, QAR, RON, RSD, RUB, RWF, SAR, SBD, SCR, SDG, SEK,
+    SGD, SHP, SLL, SOS, SRD, SSP, STD, SYP, SZL, THB, TJS, TMT, TND, TOP, TRY, TTD, TWD, TZS, UAH, UGX, USD, USN, UYI, UYU, UZS, VEF, VND, VUV, WST, XAF, XAG, XAU,
+    XBA, XBB, XBC, XBD, XCD, XDR, XFU, XOF, XPD, XPF, XPT, XSU, XTS, XUA, XXX, YER, ZAR, ZMW
+}
+
+enum AccountType {    
+    Check, Loan, Interest, Property, Fund
+}
+
+enum Status {    
+    ToDo, Doing, Done, Pending, InProgess, Finished, Error
+}
+
+
+relationship OneToOne {
+    BankAccountInterest{creditedAccountId} to BankAccount,
+    BankTransaction{catId} to BankCategory,
+    BankTransaction{accountId} to BankAccount,
+    RebaseHistory{transactionId} to BankTransaction,
+    BankProject{mainAccountId} to BankAccount,
+    BankStream{mainAccountId} to BankAccount,
+    BankProjectTransaction{transactionId} to BankTransaction,
+    BankProjectTransaction{projectId} to BankProject,
+    BankStreamTransaction{transactionId} to BankTransaction,
+    BankStreamTransaction{streamId} to BankStream,
+    BankTransactionAutomatch{transactionId} to BankTransaction,
+    BankTransactionAutomatch{automatchId} to Automatch
+    TransactionDuplicates{parentTransactionId} to BankTransaction,
+    TransactionDuplicates{childTransactionId} to BankTransaction,
+}
+
+relationship OneToMany {
+	BankCategory to Automatch{category},
+    BankVendor to BankTag{vendor}
+}
+
+relationship ManyToOne {
+	Budget{category} to BankCategory,
+	BankAccount{institution} to BankInstitution,
+    BankTransaction{category} to BankCategory,
+    BankTransaction{account} to BankAccount
+}
+
+dto * with mapstruct
+service * with serviceClass
+paginate * with infinite-scroll
+    
