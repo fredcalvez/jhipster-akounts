@@ -1,0 +1,30 @@
+{
+  "akountsApp": {
+    "processRun": {
+      "home": {
+        "title": "Process Runs",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Process Run",
+        "createOrEditLabel": "Create or edit a Process Run",
+        "notFound": "No Process Runs found"
+      },
+      "created": "A new Process Run is created with identifier {{ param }}",
+      "updated": "A Process Run is updated with identifier {{ param }}",
+      "deleted": "A Process Run is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Process Run {{ id }}?"
+      },
+      "detail": {
+        "title": "Process Run"
+      },
+      "id": "ID",
+      "process": "Process",
+      "parentId": "Parent Id",
+      "status": "Status",
+      "returns": "Returns",
+      "error": "Error",
+      "startTime": "Start Time",
+      "endTime": "End Time"
+    }
+  }
+}

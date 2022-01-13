@@ -1,0 +1,29 @@
+{
+  "akountsApp": {
+    "transactionDuplicates": {
+      "home": {
+        "title": "Transaction Duplicates",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Transaction Duplicates",
+        "createOrEditLabel": "Create or edit a Transaction Duplicates",
+        "notFound": "No Transaction Duplicates found"
+      },
+      "created": "A new Transaction Duplicates is created with identifier {{ param }}",
+      "updated": "A Transaction Duplicates is updated with identifier {{ param }}",
+      "deleted": "A Transaction Duplicates is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Transaction Duplicates {{ id }}?"
+      },
+      "detail": {
+        "title": "Transaction Duplicates"
+      },
+      "id": "ID",
+      "isduplicate": "Isduplicate",
+      "dateAdd": "Date Add",
+      "action": "Action",
+      "checked": "Checked",
+      "parentTransactionId": "Parent Transaction Id",
+      "childTransactionId": "Child Transaction Id"
+    }
+  }
+}

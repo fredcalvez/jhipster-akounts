@@ -1,0 +1,47 @@
+{
+  "name": "TransactionDuplicates",
+  "fields": [
+    {
+      "fieldName": "isduplicate",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "dateAdd",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "action",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "checked",
+      "fieldType": "Boolean"
+    }
+  ],
+  "relationships": [
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "bankTransaction",
+      "otherEntityRelationshipName": "transactionDuplicates",
+      "relationshipName": "parentTransactionId",
+      "ownerSide": true
+    },
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "bankTransaction",
+      "otherEntityRelationshipName": "transactionDuplicates",
+      "relationshipName": "childTransactionId",
+      "ownerSide": true
+    }
+  ],
+  "entityTableName": "transaction_duplicates",
+  "dto": "mapstruct",
+  "pagination": "infinite-scroll",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": ["akounts"],
+  "changelogDate": "20220113141852"
+}

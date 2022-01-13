@@ -1,0 +1,29 @@
+{
+  "akountsApp": {
+    "transactionDuplicates": {
+      "home": {
+        "title": "Transaction Duplicates",
+        "refreshListLabel": "Refrescar lista",
+        "createLabel": "Crear nuevo Transaction Duplicates",
+        "createOrEditLabel": "Crear o editar Transaction Duplicates",
+        "notFound": "Ningún Transaction Duplicates encontrado"
+      },
+      "created": "Un nuevo Transaction Duplicates ha sido creado con el identificador {{ param }}",
+      "updated": "Un Transaction Duplicates ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Transaction Duplicates ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Transaction Duplicates {{ id }}?"
+      },
+      "detail": {
+        "title": "Transaction Duplicates"
+      },
+      "id": "ID",
+      "isduplicate": "Isduplicate",
+      "dateAdd": "Date Add",
+      "action": "Action",
+      "checked": "Checked",
+      "parentTransactionId": "Parent Transaction Id",
+      "childTransactionId": "Child Transaction Id"
+    }
+  }
+}

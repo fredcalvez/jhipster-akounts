@@ -1,0 +1,30 @@
+{
+  "name": "BankTransactionAutomatch",
+  "fields": [],
+  "relationships": [
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "bankTransaction",
+      "otherEntityRelationshipName": "bankTransactionAutomatch",
+      "relationshipName": "transactionId",
+      "ownerSide": true
+    },
+    {
+      "relationshipType": "one-to-one",
+      "otherEntityName": "automatch",
+      "otherEntityRelationshipName": "bankTransactionAutomatch",
+      "relationshipName": "automatchId",
+      "ownerSide": true
+    }
+  ],
+  "entityTableName": "bank_transaction_automatch",
+  "dto": "mapstruct",
+  "pagination": "infinite-scroll",
+  "service": "serviceClass",
+  "jpaMetamodelFiltering": false,
+  "fluentMethods": true,
+  "readOnly": false,
+  "embedded": false,
+  "applications": ["akounts"],
+  "changelogDate": "20220113141837"
+}

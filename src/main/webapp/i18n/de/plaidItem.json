@@ -1,0 +1,28 @@
+{
+  "akountsApp": {
+    "plaidItem": {
+      "home": {
+        "title": "Plaid Items",
+        "refreshListLabel": "Liste aktualisieren",
+        "createLabel": "Plaid Item erstellen",
+        "createOrEditLabel": "Plaid Item erstellen oder bearbeiten",
+        "notFound": "Keine Plaid Items gefunden"
+      },
+      "created": "Plaid Item erstellt mit ID {{ param }}",
+      "updated": "Plaid Item aktualisiert mit ID {{ param }}",
+      "deleted": "Plaid Item gelöscht mit ID {{ param }}",
+      "delete": {
+        "question": "Soll Plaid Item {{ id }} wirklich dauerhaft gelöscht werden?"
+      },
+      "detail": {
+        "title": "Plaid Item"
+      },
+      "id": "ID",
+      "itemId": "Item Id",
+      "institutionId": "Institution Id",
+      "accessToken": "Access Token",
+      "addedDate": "Added Date",
+      "updateDate": "Update Date"
+    }
+  }
+}

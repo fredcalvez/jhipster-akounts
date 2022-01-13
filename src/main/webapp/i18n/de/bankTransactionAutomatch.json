@@ -1,0 +1,25 @@
+{
+  "akountsApp": {
+    "bankTransactionAutomatch": {
+      "home": {
+        "title": "Bank Transaction Automatches",
+        "refreshListLabel": "Liste aktualisieren",
+        "createLabel": "Bank Transaction Automatch erstellen",
+        "createOrEditLabel": "Bank Transaction Automatch erstellen oder bearbeiten",
+        "notFound": "Keine Bank Transaction Automatches gefunden"
+      },
+      "created": "Bank Transaction Automatch erstellt mit ID {{ param }}",
+      "updated": "Bank Transaction Automatch aktualisiert mit ID {{ param }}",
+      "deleted": "Bank Transaction Automatch gelöscht mit ID {{ param }}",
+      "delete": {
+        "question": "Soll Bank Transaction Automatch {{ id }} wirklich dauerhaft gelöscht werden?"
+      },
+      "detail": {
+        "title": "Bank Transaction Automatch"
+      },
+      "id": "ID",
+      "transactionId": "Transaction Id",
+      "automatchId": "Automatch Id"
+    }
+  }
+}
